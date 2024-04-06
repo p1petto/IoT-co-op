@@ -123,11 +123,7 @@ void loop() {
   
   if(distanceFront > MIN_DISTANCE_FRONT && distanceLeft < MIN_DISTANCE_LEFT){
     move_forward(150);
-    //rotate_right(150);
     Serial.println("вперед");
-    distanceFront = readDistance(TRIG_PIN_FRONT, ECHO_PIN_FRONT);
-    distanceLeft = readDistance(TRIG_PIN_LEFT, ECHO_PIN_LEFT);
-    //if (distanceLeft < MIN_DISTANCE_LEFT) move_back(150);
   }
   
   else if (distanceLeft > MIN_DISTANCE_LEFT){

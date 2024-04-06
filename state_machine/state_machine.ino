@@ -135,8 +135,8 @@ void loop() {
     rotate_right(250);
     Serial.println("направо");
   }
-  // else {
-  //   rotate_left(250);
-  // }
+  else {
+    turn_left(200, 0.5);
+  }
   
 }
